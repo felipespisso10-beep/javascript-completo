@@ -5,9 +5,16 @@ const cursos=["HTML1","HTML2","HTML3","HTML4","HTML5","HTML6",]
 
 cursos.map((el,chave)=> {
     const novoElemento=document.createElement("div")
-    novoElemento.setAttribute("Id","c" + chave)
+    novoElemento.setAttribute("Id","c" + (chave + 1))
     novoElemento.setAttribute("class","curso c1")
     novoElemento.innerHTML=el
+    
+    const btn_lixeira=document.createAttribute("img")
+    btn_lixeira.setAttribute("src","")
+    
+    novoElemento.addEventListener("click",(evt)=>{
+        console.log(evt.target)
+    })
     caixa1.appendChild(novoElemento)
 })
 
