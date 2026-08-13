@@ -1,4 +1,4 @@
-const div_relogio=document.getElementById("relogio")
+const div_relogio=document.getElementById("di_relogio")
 
 const data=new Date()
 
